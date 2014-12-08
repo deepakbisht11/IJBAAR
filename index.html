@@ -1,0 +1,452 @@
+<!DOCTYPE HTML>
+
+<html>
+<head>
+	<title>&nbsp;&nbsp;IJBAAR &nbsp;||&nbsp; GBPUAT Pantnagar</title>
+
+	<link rel="stylesheet" href="assets/css/style.css">
+	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+	<link rel="stylesheet" href="assets/css/bootstrap-theme.min.css">
+
+	<script src="assets/js/jquery-1.10.js"></script>
+	<script src="assets/js/bootstrap.min.js"></script>
+   <link rel="icon" href="assets/img/logo.png">
+
+</head>
+
+<body id="body">
+
+	<!-- -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-  Header section =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- -->
+
+	
+
+	<header class="container">
+		      
+          <div class="row">
+             <div class="col-md-12" id="header" style="margin-top:1%;">
+              <div class="row">
+                <div class="col-md-1" id="logo">
+                 <img src="assets/img/logo.png" alt="IJBAAR logo" width="100" height="100"></img>
+                </div>
+                 <div class="col-md-10" id="title">
+                    <div class="row">
+                      <div class="col-md-12">
+                  <h2 style="font-weight:bolder;">International Journal for Basic and Applied Agricultural Research</h2>
+                       </div>
+                   <div class="col-md-12">
+                  <h4>Govind Ballabh Pant University of Agriculture and Technology , Pantnagar Uttarakhand</h4>
+                        </div>
+                    </div>
+                </div>
+
+           </div>
+         </div>
+      </div>
+
+            <!--   -=-=-=-=-=-=-=-=-=-=-=-=-=-  navigation Bar   -=-=-=-=-=-=-=-=-=-=-=-=-   -->
+          <div class="row">
+
+           
+          <div class="navbar navbar-inverse" role="navigation">
+                  <div class="navbar-header">
+                     <button type="button" class="navbar-toggle" data-toggle="collapse"     data-target=".navbar-inverse-collapse">
+                          <span class="icon-bar"></span>
+                          <span class="icon-bar"></span>
+                          <span class="icon-bar"></span>
+                      </button>
+                  </div>
+                  <div class="navbar-collapse collapse navbar-inverse-collapse">
+                       <ul class="nav navbar-nav">
+                       <li class="active"><a href="#">Home</a></li>
+                       <li><a href="#">Current Publication</a></li>
+                       <li><a href="#">Publication</a></li>
+                       <li class="dropdown">
+                       <a href="#" class="dropdown-toggle" data-toggle="dropdown">Browse <b class="caret"></b></a>
+                       <ul class="dropdown-menu">
+                       <li><a href="#">Action</a></li>
+                       <li><a href="#">Another action</a></li>
+                       <li><a href="#">Something else here</a></li>
+              
+                       </ul>
+                       </li>
+                       </ul>
+                       <ul class="nav navbar-nav navbar-right">
+              <li class="active"><a href="#">Log In<span class="sr-only">(current)</span></a></li>
+              <li><a href="#">SignUp</a></li>
+           
+            </ul>
+            
+                    </div>
+              </div>
+           </div>
+
+           </header>
+           <!-- -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-  Search Bar =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- -->
+      
+    <section class="container">  
+		<div class="row">
+      <div class="col-md-12" id="search-bar">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="row">
+              <div class="col-md-8">
+                <div class="row">
+                  <div id="default-form">
+                    <form action="#" method="GET">
+                      <div class="col-md-11">
+                        <input type="text" class="form-control input-lg" name="query" placeholder="Enter search item">
+                      </div>
+                      <div class="col-md-1">
+                        <input type="submit" value="Search" class="btn btn-lg btn-success">
+                      </div>
+                    </form>
+                  </div>
+                  <div id="author-form">
+                    <form action="#" method="GET">
+                      <div class="col-md-11">
+                        <div class="row">
+                          <div class="col-md-4">
+                            <input type="text" class="form-control input-lg" name="first-name" placeholder="First name">
+                          </div>
+                          <div class="col-md-4">
+                            <input type="text" class="form-control input-lg" name="middle-name" placeholder="Middle name">
+                          </div>
+                          
+                          <div class="col-md-4">
+                            <input type="text" class="form-control input-lg" name="last-name" placeholder="last name">
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-md-1">
+                        <input type="submit" value="Search" class="btn btn-lg btn-success">
+                      </div>                  
+                  
+                    </form>
+                  </div>
+                  <div id="journal-form">
+                    <form action="#" method="GET">
+                      <div class="col-md-11">
+                        <div class="row">
+                          <div class="col-md-6">
+                            <input type="text" class="form-control input-lg" name="publication" placeholder="Publication Title">
+                          </div>
+
+                          <div class="col-md-2">
+                            <input type="text" class="form-control input-lg" name="volume" placeholder="Vol.">
+                          </div>
+
+                          <div class="col-md-2">
+                            <input type="text" class="form-control input-lg" name="issue" placeholder="Issue">
+                          </div>
+
+                          <div class="col-md-2">
+                            <input type="text" class="form-control input-lg" name="page" placeholder="Page">
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-md-1">
+                        <input type="submit" value="Search" class="btn btn-lg btn-success">
+                      </div>
+                    </form>
+                  </div>
+                </div>                
+              </div>          
+            </div>                  
+          </div>
+          <div class="col-md-12" id="button-group">
+            <div class="btn-group" data-toggle="buttons">
+                <label class="btn btn-primary active" id="basic">
+                  <input type="radio" name="options" id="option1" autocomplete="off" checked>Basic Search
+                </label>
+                <label class="btn btn-primary" id="author">
+                  <input type="radio" name="options" id="option2" autocomplete="off">Author Search
+                </label>
+                <label class="btn btn-primary" id="journal">
+                  <input type="radio" name="options" id="option3" autocomplete="off">Journal Search
+                </label>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+	 </section>
+<!--    Header Bar Finish -->
+	
+
+	<!-- -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-  Main section =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- -->
+    
+	
+
+
+	<section class="container">
+		<div class="row">
+      <div class="col-md-12 height-700" style="background-color:RGB(245,245,245);">
+        <div class="row">
+          <div class="col-md-2" id="left-sidebar"  style="margin-top:1%">
+
+            <!-- Accordian left-sidebar  starts -->
+            <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                <div class="panel panel-default">
+                  <div class="panel-heading" role="tab" id="headingOne">
+                    <h6 class="panel-title">
+                      <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        <p class='text-center'>Volume A</p>
+                      </a>
+                    </h6>
+                  </div>
+                  <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                    <div class="panel-body">
+                        Click here for more.
+                    </div>
+                  </div>
+                </div>
+                <div class="panel panel-default">
+                  <div class="panel-heading" role="tab" id="headingTwo">
+                    <h6 class="panel-title">
+                      <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        <p class='text-center'>Volume B</p>
+                      </a>
+                    </h6>
+                  </div>
+                  <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                    <div class="panel-body">
+                        Click here for more.
+                    </div>
+                  </div>
+                </div>
+                <div class="panel panel-default">
+                  <div class="panel-heading" role="tab" id="headingThree">
+                    <h6 class="panel-title">
+                      <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        <p class='text-center'>Volume C</p>
+                      </a>
+                    </h6>
+                  </div>
+                  <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                    <div class="panel-body">
+                        Click here for more
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Accordian ends -->
+          </div>
+
+<!-- Main carousels Section -->
+
+
+          <div class="col-md-7" id="main-section" style="margin-top:1%">
+
+           <div id="myCarousel" class="carousel slide" data-ride="carousel">
+
+           <!-- Carousel indicators -->
+
+                 <ol class="carousel-indicators">
+
+                  <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+
+                 <li data-target="#myCarousel" data-slide-to="1"></li>
+    
+                   <li data-target="#myCarousel" data-slide-to="2"></li>
+
+                   </ol>   
+
+             <!-- Carousel items -->
+
+           <div class="carousel-inner">
+
+              <div class="item active text-center">
+
+                <h2>Slide 1</h2>
+
+                <div class="carousel-caption">
+
+                  <h3>First slide label</h3>
+
+                  
+
+                </div>
+
+            </div>
+
+            <div class="item text-center">
+
+                <h2>Slide 2</h2>
+
+                <div class="carousel-caption">
+
+                  <h3>Second slide label</h3>
+
+                  
+                </div>
+
+            </div>
+
+            <div class="item text-center">
+
+                <h2>Slide 3</h2>
+
+                <div class="carousel-caption">
+
+                  <h3>Third slide label</h3>
+
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Carousel nav -->
+
+        <a class="carousel-control left" href="#myCarousel" data-slide="prev">
+
+            <span class="glyphicon glyphicon-chevron-left"></span>
+
+        </a>
+
+        <a class="carousel-control right" href="#myCarousel" data-slide="next">
+
+            <span class="glyphicon glyphicon-chevron-right"></span>
+
+        </a>
+
+    </div>
+
+
+
+          </div>
+
+<!-- Carousels Finished -->
+
+
+          <div class="col-md-2" id="right-sidebar" style="margin-top:1%">
+            <!-- Accordian right-sidebar  starts -->
+            <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                <div class="panel panel-default">
+                  <div class="panel-heading" role="tab" id="headingOne">
+                    <h6 class="panel-title">
+                      <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseInfoOne" aria-expanded="true" aria-controls="collapseOne">
+                        <p class='text-center'>Information A</p>
+                      </a>
+                    </h6>
+                  </div>
+                  <div id="collapseInfoOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                    <div class="panel-body">
+                        Click here for more.
+                    </div>
+                  </div>
+                </div>
+                <div class="panel panel-default">
+                  <div class="panel-heading" role="tab" id="headingTwo">
+                    <h6 class="panel-title">
+                      <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseInfoTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        <p class='text-center'>Information B</p>
+                      </a>
+                    </h6>
+                  </div>
+                  <div id="collapseInfoTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                    <div class="panel-body">
+                        Click here for more.
+                    </div>
+                  </div>
+                </div>
+                <div class="panel panel-default">
+                  <div class="panel-heading" role="tab" id="headingThree">
+                    <h6 class="panel-title">
+                      <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseInfoThree" aria-expanded="false" aria-controls="collapseThree">
+                        <p class='text-center'>Information C</p>
+                      </a>
+                    </h6>
+                  </div>
+                  <div id="collapseInfoThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                    <div class="panel-body">
+                        Click here for more
+                    </div>
+                  </div>
+                </div>
+                <div class="panel panel-default">
+                  <div class="panel-heading" role="tab" id="headingFour">
+                    <h6 class="panel-title">
+                      <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseInfoFour" aria-expanded="false" aria-controls="collapseThree">
+                        <p class='text-center'>Information D</p>
+                      </a>
+                    </h6>
+                  </div>
+                  <div id="collapseInfoFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                    <div class="panel-body">
+                        Click here for more
+                    </div>
+                  </div>
+                </div>
+                
+              </div>
+
+              <!-- Accordian ends -->
+          </div>
+        </div>
+      </div>
+    </div>
+	</section>
+
+
+
+
+	<!-- -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-  footer section =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- -->
+    
+	<footer class="container">
+   		<div class="row">
+   			<div class="col-md-12" style="margin-bottom:1%;height:80px;background-color:RGB(30,144,255);border-top:1px solid RGB(0,76,102);">
+   			</div>
+		</div>
+	</f>
+	<!-- -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-  footer section =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- -->
+
+
+
+
+	<!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="assest/js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="assets/js/ie10-viewport-bug-workaround.js"></script>
+
+
+  <!-- searching form Script -->
+
+  <script>
+    $(function(){
+      $("#author").on('click',function(){
+
+        $("#default-form").hide();
+        $("#journal-form").hide();
+        $("#author-form").show();
+      });
+      $("#journal").on('click',function(){
+
+        $("#default-form").hide();
+        $("#author-form").hide();
+        $("#journal-form").show();
+      });
+      $("#basic").on('click',function(){
+
+        $("#author-form").hide();
+        $("#journal-form").hide();
+        $("#default-form").show();
+      });
+
+    });
+
+  </script>
+
+
+
+
+
+</body>
+</html>
